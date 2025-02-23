@@ -1,0 +1,10 @@
+provider "aws"{
+region = "us-east-1"
+alias = "secondary"
+}
+
+module"module_S3"{
+ source = "./module_S3"
+ id = 345594561259
+ access_point = "mvs-qkopippmcxx1ayc7kfgxqxsmf54p1use1a-s3alias"
+}
