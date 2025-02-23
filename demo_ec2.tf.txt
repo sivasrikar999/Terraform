@@ -1,0 +1,9 @@
+provider "aws"{
+region = "us-east-1"
+}
+
+module"module_ec2"{
+ source = "./module_ec2"
+ ami ="ami-07fa5275316057f54"
+ instance_type = "t3.micro"
+}
