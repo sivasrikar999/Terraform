@@ -1,0 +1,7 @@
+variable "id"{
+ description = "s3_bucket_id"
+}
+
+variable "access_point"{
+description = "access point for the s3 bucket"
+}
