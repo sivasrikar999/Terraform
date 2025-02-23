@@ -1,0 +1,7 @@
+provider "aws"{
+region = "us-east-1"
+alias = "secondary"
+}
+resource "aws_s3_bucket""demo2"{
+bucket = var.id
+}
